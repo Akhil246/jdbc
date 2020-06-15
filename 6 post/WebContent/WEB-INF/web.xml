@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <context-param>
+        <param-name>driver</param-name>
+        <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>url</param-name>
+        <param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+    </context-param>
+    <context-param>
+        <param-name>user</param-name>
+        <param-value>ak</param-value>
+    </context-param>
+    <context-param>
+        <param-name>pwd</param-name>
+        <param-value>ak</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>Lab6</servlet-name>
+        <servlet-class>Lab6</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Lab6</servlet-name>
+        <url-pattern>/Lab6</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
